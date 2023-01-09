@@ -267,6 +267,8 @@ function returnToStart() {
   startCard.removeAttribute("hidden");
 }
 
+document.querySelector("#highscore-link").addEventListener("click", showHighScore);
+
 function showHighScore() {
   hideCards();
   highScoreCard.removeAttribute("hidden");
