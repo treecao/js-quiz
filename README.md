@@ -1,8 +1,10 @@
 # JavaScript Quiz 
 
+## Link
+https://treecao.github.io/js-quiz/
+
 ## Description
 A short timed quiz (5 questions)to challenge basic JS knowledge. 
-Deployed link: https://treecao.github.io/js-quiz/
 
 ## Usage
 Select *Start* to begin. 
