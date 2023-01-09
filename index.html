@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\style.css">
+    <title>JS Quiz</title>
+</head>
+
+<body>
+    <header>
+        <a id=highscore-link>View High Scores</a> 
+        <time>Time: <span id="time"></span></time>
+    </header>
+
+    <main>
+        <div id=start-card class="card">
+            <h2 id=title>JavaScript Quiz</h2>
+            <h3>Ready to test your JS knowledge?</h3>
+            <p>This is a timed quiz consisting of 5 questions. Scoring is based on remaining time. <br>
+                (There's a 10 second penalty for each incorrect response.)<br><br>
+                Good luck!
+            </p>
+            <button id=start-button class="button">START</button>
+        </div>
+
+        <div hidden id=question-card class="card">
+            <h2 id=question-content></h2>
+            <div id=answer-choices>
+                <button id=choice0 class="button choice-button"></button>
+                <button id=choice1 class="button choice-button"></button>
+                <button id=choice2 class="button choice-button"></button>
+                <button id=choice3 class="button choice-button"></button>
+            </div>
+            <div id=result-div>
+                <p id=result-text></p>
+            </div>
+        </div>
+
+        <div hidden id=score-card class="card">
+            <h2>Nice job!</h2>
+            <p>Your score (based on remaining time): <span id=score></span>.</p>
+            <form class="initial-textbox">
+                  <label for="initials">Enter initials: </label>
+                  <input type="text" id="initials">
+                  <button id="submit-button" class="button">Submit</button>
+            </form>
+        </div>
+
+        <div hidden id=highscore-card class="card">
+            <h2>High Scores</h2>
+            <ol id="highscore-list">
+            </ol>
+            <div class="hs-nav">
+                <button id="back-button" class="button">Back to Quiz</button>
+                <button id="clear-button" class="button">Clear High Scores</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="assets\script.js"></script>
+</body>
+</html>
