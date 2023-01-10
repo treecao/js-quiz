@@ -1,7 +1,7 @@
 //questions & answer choices
 const questions = [
     {
-      questionContent: "What is the output of this code: console.log(typeofNaN)",
+      questionContent: "What is the output of this code: console.log(typeof(NaN))",
       choices: [
         "1. NaN", 
         "2. Number", 
@@ -12,7 +12,7 @@ const questions = [
     },
    
     {
-      questionContent: "What is the output of this code: console.log(typeof typeof 1);",
+      questionContent: "What is the output of this code: console.log(typeof(typeof(1)));",
       choices: [
         "1. String",
         "2. Number",
